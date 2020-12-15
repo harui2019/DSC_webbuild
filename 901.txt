@@ -1,0 +1,49 @@
+TWN1156	Kaohsiung City
+TWN1158	Pingtung
+TWN1160	Tainan City
+TWN1161	Hsinchu City
+TWN1162	Hsinchu
+TWN1163	Yilan
+TWN1164	Keelung City
+TWN1165	Miaoli
+TWN1166	Taipei City
+TWN1167	New Taipei City
+TWN1168	Taoyuan
+TWN1169	Changhua
+TWN1170	Chiayi
+TWN1171	Chiayi City
+TWN1172	Hualien
+TWN1173	Nantou
+TWN1174	Taichung City
+TWN1176	Yunlin
+TWN1177	Taitung
+TWN3414	Penghu
+TWN3415	Kinmen
+TWN5128	Lienchiang
+
+
+data-type="area" class="area" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); stroke-linejoin: round; cursor: pointer;"
+
+<svg 
+height="185.1702999820314" 
+version="1.1" 
+width="472" 
+xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+style="overflow: hidden; position: relative; left: -0.046875px;"
+viewBox="77.67663169308224 28.922692014990254 166.54975333333334 65.33912666666667" 
+preserveAspectRatio="xMinYMin">
+
+<svg 
+baseprofile="tiny" 
+fill="#7c7c7c" 
+height="1200" 
+width="600" 
+stroke="#ffffff" 
+stroke-linecap="round" 
+stroke-linejoin="round" 
+stroke-width="2" 
+version="1.2" 
+viewbox="0 0 1000 1295" 
+width="1000" 
+xmlns="http://www.w3.org/2000/svg"
+xmlns:xlink="http://www.w3.org/1999/xlink" >

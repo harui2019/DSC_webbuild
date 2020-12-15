@@ -1,0 +1,5 @@
+<circle cx="478.01181654289746" cy="98.53748208572986" r="15" fill="#fd4851" stroke="#ffffff" stroke-width="1" stroke-linejoin="round" x="478.01181654289746" y="98.53748208572986" data-id="paris" data-type="plot" class="plot" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); stroke-linejoin: round; cursor: pointer;" transform="matrix(1,0,0,1,0,0)"></circle>
+
+
+r="8", fill="#fff" stroke="fff" stroke-width="0" stroke-linejoin="round" x= y= 
+data-type="plot" class="polt" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); stroke-linejoin: round; cursor: pointer;"

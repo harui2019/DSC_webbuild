@@ -1,0 +1,59 @@
+
+        $(function () {
+            $maparea2 = $(".mapcontainer");
+            $maparea2.mapael({
+                map: {
+                    name: "france_departments",
+                    zoom: {
+                        enabled: true,
+                        maxLevel: 25
+                    },
+                    defaultPlot: {
+                        attrs: {
+                            opacity: 0.6
+                        }
+                    },
+                    defaultArea: {
+                        eventHandlers: {
+                            click: function (e, id) {
+                                $maparea2.trigger('zoom', {
+                                    area: id,
+                                    areaMargin: 10
+                                });
+                            }
+                        }
+                    }
+                },
+                plots: {
+                    'paris': {
+                        latitude: 48.86,
+                        longitude: 2.3444,
+                        tooltip: {content: "<span style=\"font-weight:bold;\">City :</span> Paris"},
+                        text: {content: "Paris"}
+                    },
+                    'lyon': {
+                        latitude: 45.758888888889,
+                        longitude: 4.8413888888889,
+                        tooltip: {content: "<span style=\"font-weight:bold;\">City :</span> Lyon"},
+                        text: {content: "Lyon"}
+                    }
+                }
+            });
+
+            $('#gotolyon').on('click', function () {
+                $maparea2.trigger('zoom', {level: 10, latitude: 45.758888888889, longitude: 4.8413888888889});
+            });
+
+            $('#gotoparis').on('click', function () {
+                $maparea2.trigger('zoom', {level: 10, plot: 'paris'});
+            });
+
+            $('#gotogironde').on('click', function () {
+                $maparea2.trigger('zoom', {area: 'department-33'});
+            });
+
+            $('#clearzoom').on('click', function () {
+                $maparea2.trigger('zoom', {level: 0});
+            });
+        });
+    
