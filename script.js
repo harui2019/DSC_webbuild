@@ -27,13 +27,15 @@ $(document).ready(function() {
             }
             // console.log($("#ground").attr("src"));
             TriggerExcavator();
+            clicktimes++;
         }
         else{
             //簡易移除無動畫版
-           $("#ground").remove();
-           $("#excavator").remove(); 
+           $("#ground").css('display', 'none');
+           $("#excavator").css('display', 'none');
+           // $(".imgbox").remove();
+           $(".container").attr("z-index", 2); 
         }
-        clicktimes++;
     });
 });
 
