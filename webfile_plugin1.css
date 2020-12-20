@@ -4,7 +4,7 @@
             font-size: 30px;
             color: #000000;
             margin: 20px auto 20px auto;
-            display: block;
+            display:none ;
             text-align: center;
         }
 
@@ -13,19 +13,22 @@
             padding: 0;
             font-size: 22px;
             color: #343434;
+        }
 
+        body {
+            background-color: #232323;
         }
 
         .container {
             width: 100%;
             overflow: hidden;
             min-width: 700px;
-            /* max-width: 1200px; */
-            margin-left: auto;
-            margin-right: auto;
+            position: relative;
+            margin-left: 0;
+            margin-right: 0;
         }
 
-        .knobContainer {
+        /* .knobContainer {
             text-align: center;
             margin: 10px;
         }
@@ -39,7 +42,7 @@
             width: 223px;
             border-radius: 5px;
             margin-left: 5px;
-        }
+        } */
 
         /* Specific mapael css class are below
          * 'mapael' class is added by plugin
@@ -50,7 +53,7 @@
             background-color: #fff;
             opacity: 0.80;
             filter: alpha(opacity=80);
-            border-radius: 4px;
+            border-radius: 5px;
             padding: 10px;
             z-index: 1000;
             max-width: 200px;
@@ -59,30 +62,36 @@
         }
         
         .mapael .map {
-            margin-right: 100px;
-            margin-left: 100px;
+            margin-right: auto;
+            margin-left: auto;
             overflow: hidden;
             position: relative;
             background-color: #232323;
-            border-radius: 5px;
+            border: solid #fff;
+            border-width: 2px;
+            border-radius: 8px;
+            min-width: 500px; 
+            /* if width < 500, enter mobile mod  */
+            max-width: 100%;
+            min-height: 500px;
+            max-height: 100%;
         }
 
         /* For all zoom buttons */
         .mapael .zoomButton {
-            background-color: #fff;
-            border: 1px solid #ccc;
-            color: #000;
-            width: 15px;
-            height: 15px;
-            line-height: 15px;
+            background-color: rgb(124, 124, 124);
+            border: 2px solid rgb(255, 255, 255);
+            border-radius: 5px;
+            color: rgb(255, 255, 255);
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
             text-align: center;
-            border-radius: 0px;
             cursor: pointer;
             position: absolute;
-            top: 0;
-            font-weight: bold;
+            font-size: x-large;
+            font-weight: 800;
             left: 10px;
-
             -webkit-user-select: none;
             -khtml-user-select : none;
             -moz-user-select: none;
@@ -97,14 +106,14 @@
 
         /* Then Zoom In button */
         .mapael .zoomIn {
-            top: 30px;
+            top: 50px;
         }
 
         /* Then Zoom Out button */
         .mapael .zoomOut {
-            top: 50px;
+            top: 90px;
         }
         
-        .mapael .zoomReset:hover {
-            top: 10px;
+        .mapael .zoomButton:hover {
+            background-color: #b7b7b7;
         }
