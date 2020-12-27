@@ -1,6 +1,7 @@
 {                    
     "外傘頂洲": {
         "id": "outunbrralla",
+        "path": "./外傘頂洲",
         "latitude": 23.5,
         "longitude": 120,
         "text": {
@@ -14,6 +15,7 @@
     "case1": {
         "latitude": 22.665537, 
         "longitude": 120.548754, 
+        "path": "./DSC-web-master/html/cases/Pingdong",
         "text": {
             "position": "left",
             "content": "屏東運動休閒園區迫遷案"
@@ -25,6 +27,7 @@
     "case2": {
         "latitude": 25.0576, 
         "longitude": 121.2312, 
+        "path": "./DSC-web-master/html/cases/Taoyuan",
         "text": {
             "position": "top",
             "content": "桃園航空城土地徵收案"
@@ -36,6 +39,7 @@
     "case3": {
         "latitude": 25.000959, 
         "longitude": 121.445242, 
+        "path": "./DSC-web-master/html/cases/DaGuan",
         "text": {
             "position": "bottom",
             "content": "大觀社區迫遷案"

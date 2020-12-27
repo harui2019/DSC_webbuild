@@ -374,7 +374,9 @@
                             caseintro.style.display = "block";
                             //console.log(e);
                             //console.log(id);
+                            console.log(loading["plots"][e.currentTarget.dataset["id"]]["path"]);
                             console.log(e.currentTarget.dataset["id"]); //外傘頂洲
+                            //$(function() {$("#caseintro-content").load(loading["plots"][e.currentTarget.dataset["id"]]["path"]+".html");})
                             $(function() {$("#caseintro-content").load([e.currentTarget.dataset["id"]]+".html");})
                         }
                     }
