@@ -161,7 +161,24 @@
                         console.log(loading2[i] + " has error occur\n" + "!!!!!!!!!!");
                     }
                 });
+                setTimeout(() => $(function() {
+                    //loading check
+                    console.log("1");
+                    console.log("Ground control to mapeal");
+                    //Loading the json data into specific var. on mapeal 
+                    mapealdata.areas = loading["areas"];
+                    mapealdata.legend = loading["legends"];
+                    mapealdata.plots = loading["plots"];
+                    //data loading check
+                    console.log("This is mapeal to ground control");
+                    console.log("areas:", mapealdata.areas);
+                    console.log("legend:", mapealdata.legend);
+                    console.log("plots:", mapealdata.plots);
 
+                    // Mapael initialisation
+                    $(".twmap").mapael(mapealdata);
+                }, 200));
+                    
                 // $.getJSON(pathjson[i], function(obj) {
                 //     console.log("start loading...");
                 //     loading[loading2[i]] = obj;
@@ -178,24 +195,6 @@
                 // })
             };
         }
-        
-            setTimeout(() => $(function() {
-        //loading check
-        console.log("1");
-        console.log("Ground control to mapeal");
-        //Loading the json data into specific var. on mapeal 
-        mapealdata.areas = loading["areas"];
-        mapealdata.legend = loading["legends"];
-        mapealdata.plots = loading["plots"];
-        //data loading check
-        console.log("This is mapeal to ground control");
-        console.log("areas:", mapealdata.areas);
-        console.log("legend:", mapealdata.legend);
-        console.log("plots:", mapealdata.plots);
-
-        // Mapael initialisation
-        $(".twmap").mapael(mapealdata);
-    }, 200));
     }
     process();
     //hint: getJSON has a problem in for-loop which, 
